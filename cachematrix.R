@@ -34,7 +34,7 @@ cacheSolve <- function(x, ...) {
   calcinv <- x$getcalcinverse()
   # Check if the inverse has already been computed
   if(!is.null(calcinv)) {
-    message("Retreiving cached data....")
+    print("Retreiving cached data....")
     return(calcinv)
   }
   # If cached inverse does not exist, get data
